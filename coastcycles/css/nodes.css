@@ -1,0 +1,376 @@
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+/*
+--- Typography ---
+*/
+/*========================
+     Frame Styles  /bikes
+==========================*/
+/* line 13, ../sass/nodes.scss */
+ul.bike-types {
+  padding: 0;
+  margin: 0;
+}
+/* line 16, ../sass/nodes.scss */
+ul.bike-types li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  display: block;
+  padding: 25px 0px;
+  border-bottom: 1px solid #905f39;
+}
+/* line 24, ../sass/nodes.scss */
+ul.bike-types li:nth-last-child(1) {
+  border-bottom: 0;
+}
+/* line 27, ../sass/nodes.scss */
+ul.bike-types li a {
+  text-decoration: none;
+  color: white;
+}
+/* line 31, ../sass/nodes.scss */
+ul.bike-types li img {
+  width: 100%;
+  border-radius: 3px;
+}
+/* line 35, ../sass/nodes.scss */
+ul.bike-types li span {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  opacity: .6;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+/* line 46, ../sass/nodes.scss */
+ul.bike-types li a:hover span {
+  opacity: 1;
+}
+
+/*=================================
+     Gallery - Flicker Photo Page
+===================================*/
+/* line 56, ../sass/nodes.scss */
+#flickrgallery .flickr-wrap {
+  float: none;
+  margin-bottom: 1em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0 10px 10px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 65, ../sass/nodes.scss */
+#flickrgallery .flickr-wrap .flickrgallery-title {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: .6;
+  line-height: 1.2em;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+/* line 78, ../sass/nodes.scss */
+#flickrgallery .flickr-wrap:hover .flickrgallery-title {
+  opacity: 1;
+}
+/* line 81, ../sass/nodes.scss */
+#flickrgallery .flickr-wrap .flickr-total {
+  opacity: 0;
+}
+/* line 84, ../sass/nodes.scss */
+#flickrgallery .flickr-wrap img {
+  width: 100%;
+  border-radius: 3px;
+  line-height: 0px;
+}
+
+/* line 90, ../sass/nodes.scss */
+#flickr_badge_uber_wrapper {
+  width: 100% !important;
+}
+/* line 92, ../sass/nodes.scss */
+#flickr_badge_uber_wrapper a#flickr_www {
+  display: none !important;
+}
+/* line 95, ../sass/nodes.scss */
+#flickr_badge_uber_wrapper .flickr_badge_image {
+  width: 25%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+}
+
+/* line 104, ../sass/nodes.scss */
+.page-flickr-set h1.title {
+  margin-bottom: 30px;
+}
+
+/* line 107, ../sass/nodes.scss */
+.flickrgallery-return a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  padding-left: 10px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+/* line 118, ../sass/nodes.scss */
+.flickrgallery-return a:before {
+  content: '';
+  top: 4px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid white;
+  position: absolute;
+  left: 0px;
+}
+
+/*=================================
+     bike taxonomy - /photos/my-bike-type
+===================================*/
+/* line 133, ../sass/nodes.scss */
+.page-taxonomy-term .node-bike {
+  border-bottom: 1px solid #905f39;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 140, ../sass/nodes.scss */
+.page-taxonomy-term .node-bike .group-left,
+.page-taxonomy-term .node-bike .group-right {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: none;
+  width: 100%;
+}
+
+/* line 147, ../sass/nodes.scss */
+.page-taxonomy-term .node-bike .group-right img {
+  width: 100%;
+}
+
+/* line 150, ../sass/nodes.scss */
+.page-taxonomy-term .node-bike .field-name-title h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: .2em;
+  line-height: 1em;
+}
+
+/* line 156, ../sass/nodes.scss */
+.feed-icon {
+  float: right;
+}
+
+/*============================================
+     Bike or Product Content Type -- content/
+==============================================*/
+/* line 164, ../sass/nodes.scss */
+.page-node .filter-wrapper,
+.page-node .grippie {
+  display: none;
+}
+
+/* line 167, ../sass/nodes.scss */
+.node-type-bike .field-type-image .field-item img {
+  width: 100%;
+}
+
+/* line 170, ../sass/nodes.scss */
+.node-type-bike .field-name-field-type-of-bike {
+  clear: both;
+}
+
+/* line 173, ../sass/nodes.scss */
+.node-type-bike .field-name-field-type-of-bike a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  padding-left: 10px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+/* line 184, ../sass/nodes.scss */
+.node-type-bike .field-name-field-type-of-bike a:before {
+  content: '';
+  top: 4px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid white;
+  position: absolute;
+  left: 0px;
+}
+
+/*===================
+    Miscellaneous
+=====================*/
+/* line 202, ../sass/nodes.scss */
+.node-unpublished {
+  /* Unpublished nodes */
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */
+}
+/* line 205, ../sass/nodes.scss */
+.node-unpublished p.unpublished {
+  /* The word "Unpublished" displayed underneath the content. */
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/*===================
+     Media Queries
+=====================*/
+@media all and (min-width: 480px) {
+  /* line 217, ../sass/nodes.scss */
+  .flickr-block {
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    margin-top: 100px;
+  }
+  /* line 221, ../sass/nodes.scss */
+  .flickr-block h2 {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1em;
+    margin-top: 20px;
+  }
+
+  /* line 229, ../sass/nodes.scss */
+  ul.bike-types li {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border-bottom: 0;
+  }
+  /* line 234, ../sass/nodes.scss */
+  ul.bike-types li span {
+    font-size: 1.75em;
+  }
+
+  /* line 239, ../sass/nodes.scss */
+  #flickr_badge_uber_wrapper .flickr_badge_image {
+    width: 100%;
+  }
+  /* line 241, ../sass/nodes.scss */
+  #flickr_badge_uber_wrapper .flickr_badge_image img {
+    border-radius: 3px;
+  }
+
+  /*-- bike taxonomy - /photos/my-bike-type 480 --*/
+  /* line 247, ../sass/nodes.scss */
+  .page-taxonomy-term .node-bike .group-left,
+  .page-taxonomy-term .node-bike .group-right {
+    float: left;
+  }
+
+  /* line 250, ../sass/nodes.scss */
+  .page-taxonomy-term .node-bike .group-left {
+    width: 60%;
+    padding-right: 20px;
+  }
+
+  /* line 254, ../sass/nodes.scss */
+  .page-taxonomy-term .node-bike .group-right {
+    padding-top: 92px;
+    width: 40%;
+  }
+
+  /*-- bike node - 480 /content/node-name --*/
+  /* line 259, ../sass/nodes.scss */
+  .node-type-bike .field-type-image .field-item {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding: 10px 10px;
+  }
+}
+@media all and (min-width: 600px) {
+  /* line 272, ../sass/nodes.scss */
+  .flickr-block {
+    margin-left: 20px;
+  }
+
+  /* line 275, ../sass/nodes.scss */
+  #flickr_badge_uber_wrapper .flickr_badge_image {
+    width: 50%;
+    float: left;
+    padding: 5px;
+  }
+
+  /* line 280, ../sass/nodes.scss */
+  .page-flickr-set #flickrgallery .flickr-wrap {
+    width: 50%;
+    float: left;
+    padding: 0 0 10px 0;
+  }
+
+  /* line 285, ../sass/nodes.scss */
+  .page-flickr-set #flickrgallery .flickr-wrap.even {
+    clear: both;
+    padding-right: 10px;
+  }
+
+  /* line 289, ../sass/nodes.scss */
+  .page-flickr-set #flickrgallery .flickr-wrap.odd {
+    padding-left: 10px;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 296, ../sass/nodes.scss */
+  #flickrgallery .flickr-wrap {
+    width: 50%;
+    float: left;
+    padding: 0 0 10px 0;
+  }
+
+  /* line 301, ../sass/nodes.scss */
+  #flickrgallery .flickr-wrap.even {
+    clear: both;
+    padding-right: 10px;
+  }
+
+  /* line 305, ../sass/nodes.scss */
+  #flickrgallery .flickr-wrap.odd {
+    padding-left: 10px;
+  }
+}

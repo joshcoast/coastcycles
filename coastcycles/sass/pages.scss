@@ -1,0 +1,292 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+@import "base";
+
+html {
+  background: url(../images/main-bg.jpg) #241D1D left 100px repeat; //fallback for ie8
+  background:
+    url(../images/big-logo.png)  left 100px no-repeat,
+    url(../images/main-bg.jpg) #241D1D left 100px repeat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+
+#skip-link {
+  margin: 0;
+  a,
+  a:visited {
+    display: block;
+    width: 100%;
+    padding: 2px 0 3px 0;
+    text-align: center;
+    background-color: #666;
+    color: #fff;
+  }
+}
+
+.breadcrumb {
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+/*============
+     Header
+==============*/
+#header {
+}
+.branding {
+  background: url(../images/main-banner.png) no-repeat center center;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-bottom: 90%;
+  h1, h2 {
+    display: none;
+  }
+}
+
+#logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+#name-and-slogan {
+  float: left;
+}
+
+#site-name {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.5em;
+  a:link,
+  a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+}
+.region-header {
+  clear: both;
+}
+
+/*============
+     Main
+==============*/
+
+#page {
+  padding: 20px;
+}
+
+h1.title,
+h2.node-title,
+h2.block-title,
+h2.title,
+h2.comment-form,
+h3.title {
+  margin: 0;
+}
+h1.title {
+  text-align: center;
+  border-top: 1px solid #905F39;
+  border-bottom: 1px solid #905F39;
+}
+#page h3 {
+  font-size: 1.75em;
+}
+a.logo-home {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: url(../images/logo-top-inside.png) transparent center center no-repeat;
+  background-size: contain;
+  text-indent: -999px;
+  overflow: hidden;
+}
+div.messages {
+  margin: 1.5em 0;
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+ul.inline {
+  display: inline;
+  padding: 0;
+
+  li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 1em 0 0;
+  }
+}
+
+span.field-label { /* The inline field label used by the Fences module */
+  padding: 0 1em 0 0;
+}
+
+.item-list .pager { /* A list of page numbers when more than 1 page of content is available */
+  padding: 0;
+
+  li { /* Each page number in the pager list */
+    padding: 0 0.5em;
+  }
+}
+
+/*===================
+     Right Sidebar
+=====================*/
+
+.sidebar-images {
+  display: none;
+}
+
+
+/*===================
+     Media Queries
+=====================*/
+
+//Brother Bear
+@media all and (min-width: 480px) {
+  .sidebar-images {
+    overflow: hidden;
+    text-indent: -999px;
+    margin-left: 20px;
+    display: block;
+    display: block;
+    position: absolute;
+    top: 30px;
+    bottom: 10%;
+    width: 130px;
+    background: url(/sites/default/files/pictures/sidebar-1.png) center top no-repeat;
+    background-size: cover;
+  }
+
+  .sidebar-second .main-content {
+    padding-left: 20px;
+  }
+
+}
+
+//Mama Bear
+@media all and (min-width: 600px) {
+  .sidebar-second .main-content {
+    padding-left: 15%;
+  }
+  .no-sidebars #page {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .sidebar-images {
+    width: 175px;
+  }
+}
+
+//Papa Bear
+@media all and (min-width: 960px) {
+  .sidebar-second .main-content {
+    padding-left: 25%;
+  }
+  .sidebar-images {
+    width: 220px;
+  }
+}
+
+
+/*============ Media Queries Tags - not for production =============*/
+.screen-width {
+	position:fixed;
+	right:0;
+	bottom:0;
+	z-index:99999;
+	display:none;
+	padding:0 10px;
+	margin: 0;
+	border-radius:5px 0 0 0;
+	background-color:rgba(0,0,0,.5);
+	color:#fff;
+	font-size:12px;
+}
+.screen-width p {
+  margin: 0px;
+  padding: 0px;
+}
+.s1 {
+	display:block;
+}
+
+@media only screen and (min-width: 480px) {
+	.screen-width {
+		display:none;
+	}
+
+	.s2 {
+		display:block;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.screen-width {
+		display:none;
+	}
+
+	.s3 {
+		display:block;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.screen-width {
+		display:none;
+	}
+
+	.s4 {
+		display:block;
+	}
+}
+
+.window-width {
+	position:fixed;
+	right:0;
+	bottom:24px;
+	z-index:99999;
+	padding:0 10px;
+	border-radius:5px 0 0 0;
+	background-color:rgba(0,0,0,.5);
+	color:#fff;
+	text-shadow:1px 1px rgba(0,0,0,.75);
+	font-size:12px;
+}
+
+
+/*======== END Media Queries Tags - not for production =============*/
+

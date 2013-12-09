@@ -1,0 +1,322 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+/*
+--- Typography ---
+*/
+/* line 12, ../sass/pages.scss */
+html {
+  background: url(../images/main-bg.jpg) #241d1d left 100px repeat;
+  background: url(../images/big-logo.png) left 100px no-repeat, url(../images/main-bg.jpg) #241d1d left 100px repeat;
+}
+
+/* line 19, ../sass/pages.scss */
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* line 26, ../sass/pages.scss */
+#skip-link {
+  margin: 0;
+}
+/* line 29, ../sass/pages.scss */
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/* line 40, ../sass/pages.scss */
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+/* line 44, ../sass/pages.scss */
+.breadcrumb li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*============
+     Header
+==============*/
+/* line 58, ../sass/pages.scss */
+.branding {
+  background: url(../images/main-banner.png) no-repeat center center;
+  background-size: contain;
+  height: 0;
+  width: 100%;
+  padding-bottom: 90%;
+}
+/* line 64, ../sass/pages.scss */
+.branding h1, .branding h2 {
+  display: none;
+}
+
+/* line 69, ../sass/pages.scss */
+#logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+/* line 74, ../sass/pages.scss */
+#logo img {
+  vertical-align: bottom;
+}
+
+/* line 79, ../sass/pages.scss */
+#name-and-slogan {
+  float: left;
+}
+
+/* line 83, ../sass/pages.scss */
+#site-name {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+/* line 88, ../sass/pages.scss */
+#site-name a:link,
+#site-name a:visited {
+  color: #000;
+  text-decoration: none;
+}
+/* line 93, ../sass/pages.scss */
+#site-name a:hover,
+#site-name a:focus {
+  text-decoration: underline;
+}
+
+/* line 97, ../sass/pages.scss */
+.region-header {
+  clear: both;
+}
+
+/*============
+     Main
+==============*/
+/* line 105, ../sass/pages.scss */
+#page {
+  padding: 20px;
+}
+
+/* line 114, ../sass/pages.scss */
+h1.title,
+h2.node-title,
+h2.block-title,
+h2.title,
+h2.comment-form,
+h3.title {
+  margin: 0;
+}
+
+/* line 117, ../sass/pages.scss */
+h1.title {
+  text-align: center;
+  border-top: 1px solid #905F39;
+  border-bottom: 1px solid #905F39;
+}
+
+/* line 122, ../sass/pages.scss */
+#page h3 {
+  font-size: 1.75em;
+}
+
+/* line 125, ../sass/pages.scss */
+a.logo-home {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: url(../images/logo-top-inside.png) transparent center center no-repeat;
+  background-size: contain;
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+/* line 134, ../sass/pages.scss */
+div.messages {
+  margin: 1.5em 0;
+}
+/* line 136, ../sass/pages.scss */
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 142, ../sass/pages.scss */
+ul.inline {
+  display: inline;
+  padding: 0;
+}
+/* line 146, ../sass/pages.scss */
+ul.inline li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 1em 0 0;
+}
+
+/* line 153, ../sass/pages.scss */
+span.field-label {
+  /* The inline field label used by the Fences module */
+  padding: 0 1em 0 0;
+}
+
+/* line 157, ../sass/pages.scss */
+.item-list .pager {
+  /* A list of page numbers when more than 1 page of content is available */
+  padding: 0;
+}
+/* line 160, ../sass/pages.scss */
+.item-list .pager li {
+  /* Each page number in the pager list */
+  padding: 0 0.5em;
+}
+
+/*===================
+     Right Sidebar
+=====================*/
+/* line 169, ../sass/pages.scss */
+.sidebar-images {
+  display: none;
+}
+
+/*===================
+     Media Queries
+=====================*/
+@media all and (min-width: 480px) {
+  /* line 180, ../sass/pages.scss */
+  .sidebar-images {
+    overflow: hidden;
+    text-indent: -999px;
+    margin-left: 20px;
+    display: block;
+    display: block;
+    position: absolute;
+    top: 30px;
+    bottom: 10%;
+    width: 130px;
+    background: url(/sites/default/files/pictures/sidebar-1.png) center top no-repeat;
+    background-size: cover;
+  }
+
+  /* line 194, ../sass/pages.scss */
+  .sidebar-second .main-content {
+    padding-left: 20px;
+  }
+}
+@media all and (min-width: 600px) {
+  /* line 202, ../sass/pages.scss */
+  .sidebar-second .main-content {
+    padding-left: 15%;
+  }
+
+  /* line 205, ../sass/pages.scss */
+  .no-sidebars #page {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* line 209, ../sass/pages.scss */
+  .sidebar-images {
+    width: 175px;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 216, ../sass/pages.scss */
+  .sidebar-second .main-content {
+    padding-left: 25%;
+  }
+
+  /* line 219, ../sass/pages.scss */
+  .sidebar-images {
+    width: 220px;
+  }
+}
+/*============ Media Queries Tags - not for production =============*/
+/* line 226, ../sass/pages.scss */
+.screen-width {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  display: none;
+  padding: 0 10px;
+  margin: 0;
+  border-radius: 5px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 12px;
+}
+
+/* line 239, ../sass/pages.scss */
+.screen-width p {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 243, ../sass/pages.scss */
+.s1 {
+  display: block;
+}
+
+@media only screen and (min-width: 480px) {
+  /* line 248, ../sass/pages.scss */
+  .screen-width {
+    display: none;
+  }
+
+  /* line 252, ../sass/pages.scss */
+  .s2 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 258, ../sass/pages.scss */
+  .screen-width {
+    display: none;
+  }
+
+  /* line 262, ../sass/pages.scss */
+  .s3 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* line 268, ../sass/pages.scss */
+  .screen-width {
+    display: none;
+  }
+
+  /* line 272, ../sass/pages.scss */
+  .s4 {
+    display: block;
+  }
+}
+/* line 277, ../sass/pages.scss */
+.window-width {
+  position: fixed;
+  right: 0;
+  bottom: 24px;
+  z-index: 99999;
+  padding: 0 10px;
+  border-radius: 5px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
+  font-size: 12px;
+}
+
+/*======== END Media Queries Tags - not for production =============*/
